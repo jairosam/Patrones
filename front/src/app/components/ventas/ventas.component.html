@@ -1,0 +1,21 @@
+<div class="jumbotron">
+    <h1 class="display-4 text-center">Componente de Venta 💰</h1>
+        <form [formGroup] = 'formVentas' (ngSubmit) = "guardarVenta()">
+            <div class="form-group">
+                <input type="text" class="form-control" 
+                formControlName="idBicicleta" placeholder="Identificador de la bicicleta">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" 
+                formControlName="precio" placeholder="Precio de la bicicleta">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" 
+                formControlName="marca" placeholder="Marca de la bicicleta">
+            </div>
+            <div align= "center" class="form-group">
+                <button class="btn btn-success btn-lg btn-block"
+                [disabled] = "formVentas.invalid">Registrar Venta</button>
+            </div>
+        </form>
+</div>

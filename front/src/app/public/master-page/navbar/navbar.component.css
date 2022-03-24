@@ -1,0 +1,35 @@
+a{
+    font-family: arial, helvetica, roboto, "new times roman", lato;
+    font-size:medium;
+    font-style: oblique;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-decoration: none;
+}
+
+.bg-dark:hover {
+    color:aquamarine;
+  }
+
+  form {
+    position: relative;
+
+    width  : 740px;
+    height : 498px;
+    margin : 0 auto;
+    border-radius: 5px;
+
+    background-color: lightslategray;
+
+  }
+
+  .btn-outline-light:hover {
+    background-color: rgb(25, 209, 148);
+    color: aliceblue;
+  }
+
+  .brand-logo:hover{
+    background-color: rgb(17, 160, 112);
+    color: aliceblue;
+    border-radius:0.5vw 2vw;
+  }

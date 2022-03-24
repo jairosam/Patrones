@@ -1,0 +1,12 @@
+<table class="tabla table table-sm">
+    <tr class="encabezado">
+        <td>Propietario</td>
+        <td>Marca</td>
+        <td>Descripcion</td>
+    </tr>
+    <tr *ngFor="let agenda of mantenimientoServicio.list">
+        <td>{{ agenda.propietario }}</td>
+        <td>{{ agenda.marca }}</td>
+        <td>{{ agenda.descripcion }}</td>
+    </tr>
+</table>

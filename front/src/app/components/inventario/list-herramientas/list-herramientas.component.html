@@ -1,0 +1,10 @@
+<table class="tabla table table-sm">
+    <tr class="encabezado">
+        <td>Nombre</td>
+        <td>Cantidad</td>
+    </tr>
+    <tr *ngFor="let herramienta of inventarioServicio.list">
+        <td>{{ herramienta.nombre }}</td>
+        <td>{{ herramienta.cantidad }}</td>
+    </tr>
+</table>

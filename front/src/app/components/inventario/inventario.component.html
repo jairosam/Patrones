@@ -1,0 +1,27 @@
+<h1 class="display-4 text-center">Componente de inventario 🛠️</h1>
+<div class="contenedor">
+    <div class="jumbotron columna1">
+            <form [formGroup] = "formInventario">
+                <div class="form-group">
+                    <input type="text" class="form-control" 
+                    formControlName="nombre" placeholder="Nombre de la herramienta">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" 
+                    formControlName="cantidad" placeholder="Cantidad de la herramienta disponible">
+                </div>
+                <div align="center" class="form-group">
+                    <button class="btn btn-success btn-lg btn-block" (click) = "guardarHerramienta()"
+                    [disabled] = "formInventario.invalid">Registrar Herramienta</button>
+                </div>
+                <div align="center" class="form-group" (click)="gastarHerramienta()">
+                    <button class="btn btn-success btn-lg btn-block"
+                    [disabled] = "formInventario.invalid">Consumir Herramienta</button>
+                </div>
+            </form>   
+    </div>
+    <div class="columna1"></div>
+    <div class="columna2">
+        <app-list-herramientas></app-list-herramientas> 
+    </div>
+</div>

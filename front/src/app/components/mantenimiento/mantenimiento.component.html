@@ -1,0 +1,27 @@
+<h1 class="display-4 text-center">Componente de mantenimiento ⚙️</h1>
+<div class="contenedor">
+    <div class="jumbotron columna1">
+            <form [formGroup] = "formMantenimiento">
+                <div class="form-group">
+                    <input type="text" class="form-control" 
+                    formControlName="propietario" placeholder="Nombre del propietario">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" 
+                    formControlName="marca" placeholder="Marca de la bicicleta">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" 
+                    formControlName="descripcion" placeholder="Descripción del mantenimiento">
+                </div>
+                <div align="center" class="form-group">
+                    <button class="btn btn-success btn-lg btn-block" (click) = "agendarMantenimiento()"
+                    [disabled] = "formMantenimiento.invalid">Registrar Herramienta</button>
+                </div>
+            </form>   
+    </div>
+    <div class="columna1"></div>
+    <div class="columna2">
+        <app-agenda></app-agenda> 
+    </div>
+</div>

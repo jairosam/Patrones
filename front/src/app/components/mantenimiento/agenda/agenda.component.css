@@ -1,0 +1,15 @@
+.tabla {
+    position: relative;
+  
+    border-radius: 10px;
+    width  : 500px;
+    height : 100px;
+    margin : 0 auto;
+  
+    background-color:beige;
+}
+
+.encabezado{
+    font-size: 20px;
+    font-weight: bold;
+}

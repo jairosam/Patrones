@@ -1,0 +1,10 @@
+.imagen-fondo {
+    background-color: rgb(25, 209, 148);
+  }
+
+.p-p{
+    text-align: center;
+    font-family:inherit;
+    font-style:unset;
+    font-size: smaller;
+}
